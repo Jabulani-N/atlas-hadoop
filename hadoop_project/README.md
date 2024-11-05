@@ -1,6 +1,8 @@
 # atlas-hadoop
 A repository that demonstrates Hadoop
 
+This directory demonstrates performing some basic scripts within a Hadoop filesystem
+
 # Installation
 
 [How to Install Hadoop 3 on Ubuntu – A Step-by step Installation Process](https://data-flair.training/blogs/installation-of-hadoop-3-on-ubuntu/)
@@ -57,3 +59,19 @@ Connection Refused
   4. `Address Here/sbin/start-all.sh`
       * It seems to be a need to do this each login/restart of the machine
       * if you have run the `stop` version, you only need to perform the `start` again, rather than all hte steps before, after they've been run once.
+
+
+-----
+
+# Python via snakebite
+
+this is docuemtation on some commands you can do. If you are familiar with bash already, you'll recognize functions like `mkdir` and other familiar commands.
+https://snakebite.readthedocs.io/en/latest/client.html
+* you'll want to ctrl+f through this one for each command you want to see if it gives you a **generator**. If so, you'll have to perform an operation like
+
+        ```
+        for item in generator:
+            print(item)
+        ```
+
+    to "consume" the generator (make it take effect.) You can't have your generator and eat it too. Once consumed, the generator (or item within it) is gone like a slice of cake. You can't un-eat a ~~cake~~ generator. You'll have to make a new one.

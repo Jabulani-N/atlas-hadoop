@@ -75,3 +75,8 @@ https://snakebite.readthedocs.io/en/latest/client.html
         ```
 
     to "consume" the generator (make it take effect.) You can't have your generator and eat it too. Once consumed, the generator (or item within it) is gone like a slice of cake. You can't un-eat a ~~cake~~ generator. You'll have to make a new one.
+
+
+# Poitntial Pitfalls
+
+If using the provided main files, (which I have done to avoid editing them at all), you'll need to be sure dependant directories are in a state that makes hte operation possible. For example, if deleting directories, you'll either need to do so recursively, or make sure the order of deeletion is such that children are removed before parents.

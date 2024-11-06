@@ -19,20 +19,28 @@ I installed following [this tutoprial](https://www.youtube.com/watch?v=ZnrtnFEz2
 I begin running with:
 1. /mnt/d/Apps/Container/Hadoop/hadoop-3.3.6/`bin/hdfs namenode -format`
 2. `sudo service ssh start`
-3. `ssh localhost`
 4. /mnt/d/Apps/Container/Hadoop/hadoop-3.3.6/`sbin/start-all.sh`
+
+I test that it has successfully started up with `hdfs dfs -mkdir /jn; hdfs dfs -ls /`, which will show that it just created the directory `jn` with the line
+
+```
+Found 1 items
+drwxr-xr-x   - ct_unix supergroup          0 2024-11-06 15:15 /jn
+```
+* creation date will be different
 
 and end with:
 
 1. /mnt/d/Apps/Container/Hadoop/hadoop-3.3.6/sbin/stop-all.sh
     * yours will take place in your own Hadoop directory, so the only part I expect to be the same on your own machine are `/hadoop-3.3.6/sbin/start-all.sh` and `/hadoop-3.3.6/sbin/stop-all.sh`
-2. `exit` to close localhost connection
-   * it will tell you
+
+
+you can also test that you can properly use localhost ssh via `ssh localhost`, which will take you to a new, nested instnace of your terminal. use `exit` to close that localhost connection and return to normal.
+* it will tell you
         ```
         logout
         Connection to localhost closed.
         ```
-
 # Troubleshooting
 
 Connection Refused

@@ -12,7 +12,7 @@ This directory demonstrates performing some basic scripts within a Hadoop filesy
 [Hadoop: Setting up a Single Node Cluster](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html)
 
 
-I installed following [this tutoprial](https://www.youtube.com/watch?v=ZnrtnFEz22E)
+I installed following [this tutorial](https://www.youtube.com/watch?v=ZnrtnFEz22E)
 
 # Run
 
@@ -35,12 +35,14 @@ and end with:
     * yours will take place in your own Hadoop directory, so the only part I expect to be the same on your own machine are `/hadoop-3.3.6/sbin/start-all.sh` and `/hadoop-3.3.6/sbin/stop-all.sh`
 
 
-you can also test that you can properly use localhost ssh via `ssh localhost`, which will take you to a new, nested instnace of your terminal. use `exit` to close that localhost connection and return to normal.
+you can also test that you can properly use localhost ssh via `ssh localhost`, which will take you to a new, nested terminal instnace. Use `exit` to close that localhost connection and return to normal.
 * it will tell you
-        ```
+
+```
         logout
         Connection to localhost closed.
-        ```
+```
+
 # Troubleshooting
 
 Connection Refused

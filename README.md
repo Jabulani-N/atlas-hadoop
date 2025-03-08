@@ -10,7 +10,7 @@ A repository that demonstrates Hadoop
 [Hadoop: Setting up a Single Node Cluster](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html)
 
 
-I installed following [this tutoprial](https://www.youtube.com/watch?v=ZnrtnFEz22E)
+I installed following [this tutorial](https://www.youtube.com/watch?v=ZnrtnFEz22E)
 
 # Run
 
